@@ -1,0 +1,23 @@
+# This file contains all of the dependencies required to build an
+# environment suitable for running the software used by this repo.
+name: dt
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - mafft=7.487
+  - prank=v.170427
+  - clustalo=1.2.4
+  - muscle=3.8.1551
+  - emboss=6.6.0
+  - raxml=8.2.12
+  - mrbayes=3.2.7
+  - biopython=1.79
+  - beast2=2.6.3
+  - tracer=1.7.2
+  - r-essentials=4.1
+  - r-base=4.1.0
+  - r-ape=5.5
+  - r-optparse=1.6.6
+  - r-phangorn=2.7.1
+  - r-phylotate=1.3

@@ -1,0 +1,3 @@
+This directory should be empty most of the time. When a Singularity image is pulled, it will be pulled here.
+
+If Docker is the chosen run mode, the image is instead pulled to wherever your Docker images are stored.
