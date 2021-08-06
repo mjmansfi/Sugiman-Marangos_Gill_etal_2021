@@ -21,6 +21,7 @@ git clone https://github.com/mjmansfi/Sugiman-Marangos_Gill_etal_2021
 cd Sugiman-Marangos_Gill_etal_2021
 ```
 
+### Running the scripts via Docker
 The `Dockerfile` and `environment.yml` contain the instructions needed to build the virtualized environment. You can either build the image yourself:
 ```
 docker built -t [build tag] .
@@ -35,6 +36,7 @@ docker pull mjmansfi/dt:0.4.0
 
 If this image has been pruned from the Docker Hub, ping me in an issue and I will rebuild it.
 
+### Running the scripts via Singularity
 There is currently no straightforward way to transmute a `Dockerfile` into a Singularity image directly. So, in order to build the Singularity image, pull it from the Docker Hub as follows:
 ```
 # Note that the scripts expect to find the Singularity image in the ./lib folder.
