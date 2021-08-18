@@ -76,6 +76,5 @@ do
 		eval "${INVOCATION}" mb "${NEXUS}".commands > "${NEXUS}".mb.log
 		eval "${INVOCATION}" Rscript ./scripts/plot_tree.R --treefile=./output/"${FASTA}"/mrbayes/"${MSAALGO}".nexus.mrbayes.con.tre --root=midpoint --treeFormat=nexus --outFile="${FASTA}"."${MSAALGO}".mrbayes
 		mv "${FASTA}"."${MSAALGO}".mrbayes ./output/"${FASTA}"/mrbayes/
-		sleep 150s
 	done
 done
