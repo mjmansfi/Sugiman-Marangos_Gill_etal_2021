@@ -89,3 +89,12 @@ do
 		echo "Done "${FASTA}" and "${MSAALGO}"!"
 	done
 done
+
+printf "Dataset\tAlignment_algorithm\tTree_likelihood\n" > ./output/summary/all_likelihoods.tsv
+find ./output -iname '*likelihood*' | sort | while read OUTPUT;
+do
+    SET=$(echo "${OUTPUT}" | cut -d "/" -f 3)
+    ALIGNER=$(echo "${OUTPUT}" | cut -d "/" -f 5)
+    LIKELIHOOD=$(cat "${OUTPUT}")
+    printf ""${SET}"\t"${ALIGNER}"\t"${LIKELIHOOD}"\n"
+done >> ./output/summary/all_likelihoods.tsv
