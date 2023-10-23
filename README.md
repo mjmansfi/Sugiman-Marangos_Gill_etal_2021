@@ -1,5 +1,6 @@
 # Description
-This repository contains all scripts and files needed to reproduce the bioinformatic analysis presented in the forthcoming publication by Sugiman-Marangos, Gill et al. 2021.
+This repository contains all scripts and files needed to reproduce the bioinformatic analysis presented in [the 2022 publication by Sugiman-Marangos, Gill et al.](https://www.nature.com/articles/s42003-022-03333-9) ([link to bioRxiv prepint](https://www.biorxiv.org/content/10.1101/2021.08.10.455837v1.abstract)).
+
 
 ## Requirements
 In order to run the scripts in this repository, you will need:
